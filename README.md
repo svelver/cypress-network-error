@@ -1,29 +1,21 @@
 # cypress-network-error
 
-## Project setup
-```
+## Setup
+```console
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+### Start Tests
+```console
+# Terminal 1
 npm run serve
+
+# Terminal 2
+npx cypress open
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+When running demo.cy.ts, the test fails due to an Axios Network Error.
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+When running the same with `npx cypress run`, it works.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Also when removing the lines 66-91 in *src/common/api-abstract.ts* (Axios interceptor), it works.

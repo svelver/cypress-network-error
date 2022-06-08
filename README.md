@@ -14,7 +14,7 @@ npm run serve
 npx cypress open
 ```
 
-When running demo.cy.ts, the test fails due to an Axios Network Error.
+When running demo.cy.ts, the test fails due to an Axios Network Error (see the browser console). If it does not fail on the first run, run the test again.
 
 When running the same with `npx cypress run`, it works.
 

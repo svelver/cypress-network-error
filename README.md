@@ -1,6 +1,6 @@
 # cypress-network-error
 
-## Setup
+### Setup
 ```console
 npm install
 ```
@@ -19,3 +19,7 @@ When running demo.cy.ts, the test fails due to an Axios Network Error (see the b
 When running the same with `npx cypress run`, it works.
 
 Also when removing the lines 66-91 in *src/common/api-abstract.ts* (Axios interceptor), it works.
+
+### Related
+
+[Issue](https://github.com/cypress-io/cypress/issues/22190) on Cypress repository.
